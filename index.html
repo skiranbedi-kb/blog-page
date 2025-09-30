@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 10px auto;
+            background: #f9f9f9;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #post-list article {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        #add-post-section {
+            margin: 40px;
+            background: #e3e3e3;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        input,
+        textarea {
+            width: 95%;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #222;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Creative Blog</h1>
+    </header>
+    <main id="post-list"></main>
+    <section id="add-post-section">
+        <h2>Create Your New Post</h2>
+        <form id="add-post-form">
+            <input type="text" id="title" placeholder="Title" required><br>
+            <textarea id="content" placeholder="Content" required></textarea><br>
+            <button type="submit">Add Post</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
